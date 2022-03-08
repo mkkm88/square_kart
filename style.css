@@ -21,6 +21,9 @@ body{
 .logo a:hover{
     background-color: rgb(173, 173, 173);
 }
+.logo span{
+    color: darkmagenta;
+}
 nav{
     flex: 1;
     text-align: left;
