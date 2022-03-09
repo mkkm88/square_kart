@@ -1,179 +1,68 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #24252A;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#fff, grey);
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.logo a{
-    border: 5px solid rgb(17, 17, 17);
-    padding: 8px;
-    color: black;
-    font-size: 30px;
-}
-.logo a:hover{
-    background-color: rgb(173, 173, 173);
-}
-.logo span{
-    color: darkmagenta;
-}
-nav{
-    flex: 1;
-    text-align: left;
-}
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 150px;
-}
-.extra{
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 550px;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-a{
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #edf0f1;
     text-decoration: none;
-    color: #000;
-    font-size: 20px;
 }
-nav ul li a:hover{
-    color: rgb(0, 0, 255);
-    text-decoration: underline;
-}
-p{
-    color: #555;
-}
-.container{
-    max-width: 1700px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-row{
+
+header {
+    margin: 10px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 30px 10%;
 }
-.col-2{
-    flex-basis: 50%;
-    min-width: 300px;
+
+#logoimg {
+    cursor: pointer;
+
 }
-.col-2 img{
-    max-width: 50%;
-    padding: 50px 0;
-    margin-left: 50%;
-    margin-top: -25%;
-    
+
+.nav_links {
+    list-style: none;
 }
-.col-2 h1{
-    font-size: 50px;
-    line-height: 50px;
-    margin: 25px 0;
-    margin-top: 10%;
-}
-.btn{
+
+.nav_links li {
     display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
+    padding: 0px 20px;
 }
-.btn:hover{
-    background: #563434;
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
 }
-.header .row{
-    margin-top: 70px;
+
+.nav_links li a:hover {
+    color: #0088a9;
 }
-.col-3{
-    flex-basis: 50%;
-    min-width: 300px;
+
+.cta button {
+    padding: 9px 25px;
+    margin-left: 180%;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-.col-3 img{
-    max-width: 50%;
-    padding: 0 15px;
+.ctb button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-.col-3 h1{
-    font-size: 50px;
-    line-height: 50px;
-    margin-left: 60%;
-    margin-top: -25%;
-    padding-bottom: 30px;
-}
-.col-3 p{
-    margin-left: 60%;
-    padding-bottom: 30px;
-}
-.btn1{
-    display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding: 8px 30px;
-    margin-left: 60%;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-.btn1:hover{
-    background: #563434;
-}
-.col-4{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-4 img{
-    max-width: 50%;
-    padding: 50px 0;
-    margin-left: 60%;
-    margin-top: -25%
-}
-.col-4 h1{
-    font-size: 50px;
-    line-height: 50px;
-    margin: 25px;
-    margin-top: 20%;
-}
-.col-4 p{
-    margin-left: 25px;
-}
-.btn2{
-    display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 25px;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-.btn2:hover{
-    background: #563434;
-}
-.categories{
-    margin: 70px 0;
-}
-.col-5{
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.col-5 img{
-    width: 20%;
-}
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
 }
